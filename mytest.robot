@@ -1,4 +1,4 @@
 *** Test Cases ***
 
 Test run Jenkins on git
-    BuiltIn.Log To Console    pass
+    BuiltIn.Log   Learning Jenkins and GIT
