@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Hello"){
             step{
-                sh "robot mttest.robot"
+                sh "robot mytest.robot"
             }
         }
     }
