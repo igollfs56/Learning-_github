@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.13.0 on darwin)" generated="2024-10-24T03:00:53.268376" rpa="false" schemaversion="5">
+<suite id="s1" name="Learning github" source="/Users/sarawut.o/Documents/Automate_doppio/Repositories/Learning/Learning_github">
+<suite id="s1-s1" name="Mytest" source="/Users/sarawut.o/Documents/Automate_doppio/Repositories/Learning/Learning_github/mytest.robot">
+<test id="s1-s1-t1" name="Test run Jenkins on git" line="3">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>pass</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-24T03:00:53.283458" elapsed="0.000256"/>
+</kw>
+<status status="PASS" start="2024-10-24T03:00:53.282726" elapsed="0.001136"/>
+</test>
+<status status="PASS" start="2024-10-24T03:00:53.281945" elapsed="0.002756"/>
+</suite>
+<status status="PASS" start="2024-10-24T03:00:53.272576" elapsed="0.012562"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Learning github">Learning github</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Mytest">Learning github.Mytest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
