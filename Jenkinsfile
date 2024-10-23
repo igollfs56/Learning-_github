@@ -1,8 +1,8 @@
-pipeline{
+pipeline {
     agent any
     stages{
-        stage("Hello"){
-            steps{
+        stage("Hello") {
+            steps {
                 sh "robot mytest.robot"
                 // robot (
                 //     outputPath: './',
