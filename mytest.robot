@@ -1,3 +1,6 @@
+*** Settings ***
+Library    BuiltIn
+
 *** Test Cases ***
 
 Test run Jenkins on git
