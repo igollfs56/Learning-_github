@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage("Hello") {
             steps {
-                export PATH=$PATH:/path/to/your/python/bin
+                export PATH=$PATH:/opt/homebrew/bin/python3
                 sh "robot mytest.robot"
             }
         }
