@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Hello"){
             steps{
-                sh "pip list"
+                sh "pip3 list"
                 // robot (
                 //     outputPath: './',
                 //     outputFileName: 'output.xml'
