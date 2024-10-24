@@ -3,6 +3,7 @@ pipeline{
     stages{
         stage("Hello"){
             steps{
+                sh "pip3 install roborframework"
                 sh "robot mytest.robot"
                 // robot (
                 //     outputPath: './',
