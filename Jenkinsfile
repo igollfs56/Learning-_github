@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage("Hello") {
+        stage("Hello"){
             steps{
                 sh "robot mytest.robot"
                 // robot (
