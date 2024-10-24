@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Hello"){
             steps{
-                sh "pip3 install robotframework"
+                sh "pip3 list"
                 // robot (
                 //     outputPath: './',
                 //     outputFileName: 'output.xml'
