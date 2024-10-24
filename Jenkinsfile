@@ -1,11 +1,33 @@
-pipeline {
+pipeline{
     agent any
     stages{
         stage("Hello") {
-            steps {
-                export PATH=$PATH:/opt/homebrew/bin/python3
+            steps{
                 sh "robot mytest.robot"
+                // robot (
+                //     outputPath: './',
+                //     outputFileName: 'output.xml'
+                //     reportFileName: 'report.html',
+                //     logFileName: 'log.html',
+                //     disableArchiveOutput: false,
+                //     passThreshold: 100.0,
+                //     unstableThreshold: 100.0,
+                //     otherFiles: '*-png,*-jpg',
+                //     onlyCritical: false
+                // )
             }
         }
     }
 }
+
+// pipeline {
+//     agent any
+//     stages{
+//         stage("Hello") {
+//             steps {
+//                 export PATH=$PATH:/opt/homebrew/bin/python3
+//                 sh "robot mytest.robot"
+//             }
+//         }
+//     }
+// }
