@@ -3,21 +3,18 @@ pipeline{
     stages{
         stage("Hello"){
             steps{
-                sh "pip3 list"
-                sh "pip3 install roborframework"
-                sh "pip3 list"
-                sh "robot mytest.robot"
-                // robot (
-                //     outputPath: './',
-                //     outputFileName: 'output.xml'
-                //     reportFileName: 'report.html',
-                //     logFileName: 'log.html',
-                //     disableArchiveOutput: false,
-                //     passThreshold: 100.0,
-                //     unstableThreshold: 100.0,
-                //     otherFiles: '*-png,*-jpg',
-                //     onlyCritical: false
-                // )
+                sh "python3 -m robot mytest.robot"
+                robot (
+                    outputPath: './',
+                    outputFileName: 'output.xml',
+                    reportFileName: 'report.html',
+                    logFileName: 'log.html',
+                    disableArchiveOutput: false,
+                    passThreshold: 100.0,
+                    unstableThreshold: 100.0,
+                    otherFiles: '*-png,*-jpg',
+                    onlyCritical: false
+                )
             }
         }
     }
